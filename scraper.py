@@ -1,11 +1,11 @@
 from pygooglenews import GoogleNews
-from dotenv import load_dotenv
-import os
+from datetime import datetime
 import pandas as pd
 
-load_dotenv()
+
 
 gn = GoogleNews()
+now = datetime.now()
 
 topics = ['WORLD', 'NATION', 'BUSINESS', 'TECHNOLOGY', 'ENTERTAINMENT', 'SCIENCE', 'SPORTS', 'HEALTH']
 news_data = []
@@ -22,7 +22,7 @@ for topic in topics:
         })
 
 news_df = pd.DataFrame(news_data)
-excel_file_path = 'news_data.csv'
+excel_file_path = 'news_data_'+ now.strftime("%d-%m-%Y-%H-%M") +'.csv' 
 news_df.to_csv(excel_file_path, index=False)
-
+print("Scraping done.")
 
