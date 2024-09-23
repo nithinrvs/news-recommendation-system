@@ -22,7 +22,7 @@ for topic in topics:
         })
 
 news_df = pd.DataFrame(news_data)
-excel_file_path = 'news_data_'+ now.strftime("%d-%m-%Y-%H-%M") +'.csv' 
+excel_file_path = './scraped_data/news_data_'+ now.strftime("%d-%m-%Y-%H-%M") +'.csv' 
 news_df.to_csv(excel_file_path, index=False)
 print("Scraping done.")
 

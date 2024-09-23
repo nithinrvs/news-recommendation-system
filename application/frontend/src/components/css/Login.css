@@ -1,0 +1,133 @@
+/* Login page container */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left section */
+.login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf689;
+}
+
+.login-box {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    text-align: left;
+}
+
+.login-box h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-box h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-box p {
+    color: #6a6a6a;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 0.5rem;
+}
+
+.forgot-password {
+    color: #6a6a6a;
+    text-decoration: none;
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.signup-link a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Right section */
+.login-right {
+    max-width: 100%;
+    max-height: 70%;
+    margin: auto;
+    flex: 1;
+    background-color: #faf689;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.login-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.login-svg svg {
+    max-width: 100%;
+    height: auto;
+}
