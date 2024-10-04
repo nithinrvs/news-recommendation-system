@@ -3,6 +3,7 @@ import './css/Login.css';
 import { useNavigate } from 'react-router-dom';
 import { ReactComponent as MySVG } from './assests/login_image.svg';
 
+
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -19,6 +20,8 @@ function Login() {
     });
 
     if (response.ok) {
+      // Store login state in localStorage on successful login
+      localStorage.setItem('isLoggedIn', 'true');
       navigate('/dashboard');  // Navigate to the dashboard on successful login
     } else {
       alert('Invalid login');
