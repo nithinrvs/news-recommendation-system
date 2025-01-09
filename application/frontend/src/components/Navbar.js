@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './css/Navbar.css'; // Custom CSS for the navbar
 import { Link, useNavigate } from 'react-router-dom';
-import NewsLogo from './assests/News_scaled.png';
+import NewsLogo from './assests/News.svg';
 
 function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -44,24 +44,20 @@ function Navbar() {
           alt="Logo"
           className="navbar-logo"
         />
-        <span className="navbar-email">NEWS RECOMMENDER SYSTEM</span>
+        <span className="navbar-text">NEWS RECOMMENDER SYSTEM</span>
       </div>
 
       <div className="navbar-center">
-        <a href="#features" className="navbar-link">Features</a>
-        <a href="#pricing" className="navbar-link">Pricing</a>
-        <a href="#templates" className="navbar-link">Templates</a>
-        <a href="#resources" className="navbar-link">Resources</a>
+        <a href="/" className="navbar-link">Home</a>
+        <a href="/dataset" className="navbar-link">Dataset</a>
+        <a href="/algorithm" className="navbar-link">Algorithm</a>
       </div>
 
       <div className="navbar-right">
-        {isLoggedIn ? (
-          <>
-            <Link to="/profile" className="navbar-link">Profile</Link>
-            <button onClick={handleLogout} className="logout-btn">Logout</button>
-          </>
-        ) : (
+        {!isLoggedIn ? (
           <Link to="/login" className="login-btn">Login</Link>
+        ) : (
+          <button onClick={handleLogout} className="logout-btn">Logout</button>
         )}
       </div>
     </nav>

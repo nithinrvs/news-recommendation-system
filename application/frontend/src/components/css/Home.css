@@ -1,0 +1,45 @@
+/* Container for the main content and image */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    line-height: 1.6;
+}
+
+/* Styling for the text content */
+.text-content {
+    flex: 1;
+    margin-right: 20px; /* Space between text and image */
+}
+
+/* Styling for the image */
+.image-content img {
+    margin-left: 60px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Buttons container below the content */
+.buttons-container {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px; 
+}
+
+.buttons-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+    
+}
+
+.buttons-container button:hover {
+    background-color: grey;
+}

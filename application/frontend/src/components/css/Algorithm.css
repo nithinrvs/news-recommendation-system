@@ -1,0 +1,36 @@
+.algorithm-container {
+    padding: 20px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.algorithm-container h1 {
+    text-align: center;
+    color: black;
+}
+
+.algorithm-container h2 {
+    color: black;
+}
+
+.algorithm-container h3 {
+    color: #2980b9;
+}
+
+.algorithm-container p {
+    margin: 10px 0;
+}
+
+.algorithm-container ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.algorithm-container pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow-x: auto;
+}

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './css/Login.css'; 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';  // Import Link
 import { ReactComponent as MySVG } from './assests/login_image.svg';
-
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -11,7 +10,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://127.0.0.1:5000/login', {
+    const response = await fetch('http://127.0.0.1:8000/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -63,13 +62,12 @@ function Login() {
             <button type="submit" className="btn-signin">Log in</button>
           </form>
           <p className="signup-link">
-            Don’t have an account? <a href="#">Sign up</a>
+            Don’t have an account? <Link to="/signup">Sign up</Link>  {/* Update to use Link */}
           </p>
         </div>
       </div>
       <div className="login-right">
         <div className="login-svg">
-          {/* Use the imported SVG as a component */}
           <MySVG width={600} height={600} />
         </div>
       </div>

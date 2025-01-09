@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './css/Dashboard.css';
 
-function Dashboard() {
+function Newdashboard() {
     const [news, setNews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/news') // Adjust the URL if the backend is hosted elsewhere
+        fetch('http://localhost:8000/newss') // Adjust the URL if the backend is hosted elsewhere
             .then(response => response.json())
             .then(data => setNews(data))
             .catch(error => console.error('Error fetching news:', error));
@@ -34,4 +34,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Newdashboard;

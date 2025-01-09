@@ -1,0 +1,40 @@
+.dataset-container {
+    padding: 20px;
+    margin: 40px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.dataset-container h2 {
+    color: #2980b9;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}

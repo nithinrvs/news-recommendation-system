@@ -31,7 +31,7 @@ def news():
             "title": "The Brands Queen Elizabeth, Prince Charles, and Prince Philip Swear By",
             "abstract": "Shop the notebooks, jackets, and more that the royals can't live without.",
             "url": "https://assets.msn.com/labs/mind/AAGH0ET.html"
-        },
+        }   ,
         {
             "news_id": "N61837",
             "category": "news",

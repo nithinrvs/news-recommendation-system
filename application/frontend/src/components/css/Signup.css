@@ -1,0 +1,36 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+  
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.btn-signup {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

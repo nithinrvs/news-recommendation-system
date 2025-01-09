@@ -4,6 +4,11 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import Dataset from './components/Dataset';
+import Algorithm from './components/Algorithm';
+import Signup from './components/Signup';
+import Newdashboard from './components/Newdashboard';
+
 
 function App() {
   return (
@@ -14,6 +19,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dataset" element={< Dataset />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/algorithm" element={< Algorithm />} />
+          <Route path="/newdashboard" element={<Newdashboard/>} />
         </Routes>
       </div>
     </Router>

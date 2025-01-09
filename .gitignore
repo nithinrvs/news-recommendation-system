@@ -3,7 +3,9 @@
 /pygooglenews-master
 sample.txt
 test.py
+scraper.py
 /scraped_data
 /papers
 /application/frontend/node_modules
-/application/flask-backend/idbenv
+/application/flask-backend/__pycache__
+/dataset
